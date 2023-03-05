@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Untitled_Home</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/Untitled_About.css') }}">
+    <script src="{{ url_for('static', filename='Untitled_Home.js') }}"></script>
+</head>
+<body>
+
+<div class="main">
+    <div class="navigation">
+        <div class="nav_left">
+            <a href="/">EasyCook</a>
+        </div>
+        <div class="nav_right">
+            <a href="/">Home</a>
+            <a id="active" href="">About</a>
+        </div>
+    </div>
+    <div class="about">
+        <h1>Cooking? Easy.</h1>
+        <p>We realized that there is a huge problem with people finding cooking recipies and instructions,
+            people search the internet and find websites that are filled with ads and constantly trying
+            to track and sell their data. This is the purpose of this website, we make finding recipies,
+            and finding instruction, along with allergy information easiear.
+        </p>
+    </div>
+
+</div>
+</body>
+</html>

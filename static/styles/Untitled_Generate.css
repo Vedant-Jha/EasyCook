@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  outline: none;
+  font-family: Heebo;
+  margin-bottom: 0;
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8a8a8a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #575757;
+}
+
+::selection {
+  background: yellow;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  width: 100%;
+  background: transparent;
+}
+
+.nav_left {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  height: auto;
+  width: auto;
+  margin-left: 8px;
+  background: white;
+}
+
+.nav_left a{
+  color: black;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 900;
+  height: 100%;
+  width: auto;
+  text-align: center;
+  display: block;
+  max-width: 1250px;
+  transition: color 0.2s;
+}
+
+.nav_left a:hover {
+  color: #6ba9ff;
+}
+
+.nav_right {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  height: auto;
+  width: auto;
+  margin-right: 8px;
+  background: transparent;
+}
+
+.nav_right a{
+  color: black;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 900;
+  height: 100%;
+  width: 60px;
+  text-align: center;
+  display: block;
+  max-width: 1250px;
+  transition: color 0.2s;
+}
+
+#active {
+  color: #6ba9ff;
+}
+
+#dark_mode {
+  font-size: 30px;
+  padding: 10px 10px;
+}
+
+#dark_mode:hover{
+  color: #ffbc00;
+}
+
+.content {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.content h1{
+    margin: 5px;
+    font-size: 20px;
+}
+
+.content p{
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.foodmain{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.foodside {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.fooddescription {
+    display: flex;
+    flex-direction: column;
+}
+
+.foodallergy{
+    display: flex;
+    flex-direction: column;
+}

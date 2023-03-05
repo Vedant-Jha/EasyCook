@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Untitled_Home</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/Untitled_Home.css') }}">
+    <script src="{{ url_for('static', filename='Untitled_Home.js') }}"></script>
+</head>
+<body>
+
+<div class="main">
+    <div class="navigation">
+        <div class="nav_left">
+            <a href="/">EasyCook</a>
+        </div>
+        <div class="nav_right">
+            <a id="active" href="">Home</a>
+            <a href="about">About</a>
+        </div>
+    </div>
+    <form method="GET" class="form" id="myForm">
+        <input class="search" type="search" placeholder="What do you want to cook?" id="searchBox">
+        <button>🔍</button>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const form = document.querySelector('.form');
+        const searchBox = document.querySelector('#searchBox');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const searchTerm = searchBox.value;
+            form.action = `/${searchTerm}`;
+            form.submit();
+        });
+    });
+    </script>
+</div>
+</body>
+</html>

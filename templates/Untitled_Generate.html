@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Untitled_Home</title>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/Untitled_Generate.css') }}">
+</head>
+<body>
+
+<div class="main">
+    <div class="navigation">
+        <div class="nav_left">
+            <a href="/">EasyCook</a>
+        </div>  
+            <div class="nav_right">
+                <a href="/">Home</a>
+                <a href="about">About</a>
+            </div>
+    </div>
+    <div class="content">
+        <div class="foodmain">
+            <h1>{{content}}</h1>
+            <p>{{subcontent}}</p>
+        </div>
+        <div class="foodside">
+            <div class="fooddescription">
+                <h1>Description</h1>
+                <p>{{description}}</p>
+            </div>
+            <div class="foodallergy">
+                <h1>Allergy Information</h1>
+                <p>{{allergy}}</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>
