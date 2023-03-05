@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Untitled_Home</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/Untitled_About.css') }}">
+    <script src="{{ url_for('static', filename='Untitled_Home.js') }}"></script>
+</head>
+<body>
+
+<div class="main">
+    <div class="navigation">
+        <div class="nav_left">
+            <a href="/">EasyCook</a>
+        </div>
+        <div class="nav_right">
+            <a href="/">Home</a>
+            <a id="active" href="">About</a>
+        </div>
+    </div>
+    <div class="about">
+        <h1>Cooking? Easy.</h1>
+        <p>Our website generates a recipe which is both unique and 
+            creative of a food you specify, providing you with an opportunity to 
+            explore new flavor combinations and ingredients that you may have never
+             considered before, empowering home cooks to expand their culinary horizons and 
+             elevate their cookinggame to new heights.
+        </p>
+    </div>
+
+</div>
+</body>
+</html>
